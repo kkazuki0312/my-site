@@ -16,8 +16,12 @@ const IndexPage = () => (
   //   </div>
   //   <Link to="/page-2/">Go to page 2</Link>
   // </Layout>
+<div>
 <div class="marquee">
 <p>☆☆☆☆☆柏原のサイトへようこそ☆☆☆☆☆</p>
+</div>
+<h1>【きょうのメッセージ】</h1>
+<p>体調管理に気を付けて元気に過ごしましょう。</p>
 </div>
 )
 
