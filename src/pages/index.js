@@ -17,7 +17,7 @@ const IndexPage = () => (
   //   <Link to="/page-2/">Go to page 2</Link>
   // </Layout>
 <div class="marquee">
-<p>柏原のサイトへようこそ！！！</p>
+<h1>☆☆☆☆☆柏原のサイトへようこそ☆☆☆☆☆</h1>
 </div>
 )
 
