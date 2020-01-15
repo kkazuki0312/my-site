@@ -16,7 +16,9 @@ const IndexPage = () => (
   //   </div>
   //   <Link to="/page-2/">Go to page 2</Link>
   // </Layout>
-  <h1>ようこそ！</h1>
+<div class="marquee">
+<p>柏原のサイトへようこそ！！！</p>
+</div>
 )
 
 export default IndexPage
