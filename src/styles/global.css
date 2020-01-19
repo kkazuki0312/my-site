@@ -11,6 +11,8 @@ html {
     animation-timing-function: linear;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    font-size: 28px;
+    color: blue;
 }
 
 @keyframes marquee {

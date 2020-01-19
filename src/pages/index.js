@@ -17,11 +17,21 @@ const IndexPage = () => (
   //   <Link to="/page-2/">Go to page 2</Link>
   // </Layout>
 <div>
+<div>
 <div class="marquee">
 <p>☆☆☆☆☆柏原のサイトへようこそ☆☆☆☆☆</p>
 </div>
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+    <p>あなたは<img src="http://www.rays-counter.com/d451_f6_022/5e2413911e8f4/" alt="アクセスカウンター" border="0"/>人目の訪問者です！！！</p>
+    <span>ゆっくりしていってね</span>
+    </td>
+  </tr>
+</table>
+</div>
 <h1>【きょうのメッセージ】</h1>
-<p>体調管理に気を付けて元気に過ごしましょう。</p>
+<h2>暑くなければ夏じゃない。熱くなければ人生じゃない！</h2>
 </div>
 )
 
