@@ -17,6 +17,7 @@ html {
 
 .red {
     color: red;
+    font-style: italic;
 }
 
 .marquee p {
