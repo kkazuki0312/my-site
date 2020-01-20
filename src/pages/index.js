@@ -34,6 +34,9 @@ const IndexPage = () => (
     </div>
     <h1 className="darkmagenta">【きょうのメッセージ】</h1>
     <h2 className="red">本気になれば自分が変わる！本気になれば全てが変わる！！！！</h2>
+    <div className="marquee">
+        <p>★★★★★相互リンク募集中★★★★★</p>
+    </div>
   </div>
 )
 
