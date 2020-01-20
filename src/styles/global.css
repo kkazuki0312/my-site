@@ -2,8 +2,25 @@ html {
     background-color: rgb(177, 248, 168);
 }
 
+.center {
+    text-align: center;
+}
+
+.pink {
+    background-color: pink;
+    color:green;
+}
+
+.darkmagenta {
+    color:darkmagenta;
+}
+
+.red {
+    color: red;
+}
+
 .marquee p {
-    margin: 0;
+    margin-top: 20px;
     padding-left: 724px;
     display: inline-block;
     white-space: nowrap;

@@ -16,23 +16,25 @@ const IndexPage = () => (
   //   </div>
   //   <Link to="/page-2/">Go to page 2</Link>
   // </Layout>
-<div>
-<div>
-<div class="marquee">
-<p>☆☆☆☆☆柏原のサイトへようこそ☆☆☆☆☆</p>
-</div>
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td align="center">
-    <p>あなたは<img src="http://www.rays-counter.com/d451_f6_022/5e2413911e8f4/" alt="アクセスカウンター" border="0"/>人目の訪問者です！！！</p>
-    <span>ゆっくりしていってね</span>
-    </td>
-  </tr>
-</table>
-</div>
-<h1>【きょうのメッセージ】</h1>
-<h2>暑くなければ夏じゃない。熱くなければ人生じゃない！</h2>
-</div>
+  <div align="center">
+    <div>
+      <div className="marquee">
+        <p>☆☆☆☆☆柏原のサイトへようこそ☆☆☆☆☆</p>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td className="center">
+              <p className="pink forestgreen">あなたは <img src="http://www.rays-counter.com/d451_f6_022/5e2413911e8f4/" alt="アクセスカウンター" border="0" /> 人目の訪問者です！！！</p>
+              <span>ゆっくりしていってね</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h1 className="darkmagenta">【きょうのメッセージ】</h1>
+    <h2 className="red">本気になれば自分が変わる！本気になれば全てが変わる！！！！</h2>
+  </div>
 )
 
 export default IndexPage
