@@ -8,11 +8,11 @@ html {
 
 .pink {
     background-color: pink;
-    color:green;
+    color: green;
 }
 
 .darkmagenta {
-    color:darkmagenta;
+    color: darkmagenta;
 }
 
 .red {
@@ -46,19 +46,23 @@ html {
     }
 }
 
-
 .return p {
-    margin:0; 
-    padding-left:724px; 
-    display:inline-block; 
-    white-space:nowrap;
-    animation-name:marquee; 
-    animation-timing-function:linear;
-    animation-duration:3s; 
-    animation-iteration-count:infinite;
+    margin: 0;
+    padding-left: 724px;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+@keyframes return {
+    from {
+        transform: translate(0%);
     }
-    @keyframes return {
-      from   { transform: translate(0%);} 
-      99%,to { transform: translate(-100%);}
+    99%, to {
+        transform: translate(-100%);
     }
+}
