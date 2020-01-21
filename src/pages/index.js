@@ -38,7 +38,7 @@ const IndexPage = () => (
     <div className="marquee">
       <p>★★★★★相互リンク募集中★★★★★</p>
     </div>
-    <h3 className="brown">☆★☆松戸市のお天気情報☆★☆</h3>
+    <h3 className="brown">★☆★☆松戸市のお天気情報☆★☆★</h3>
   </div>
 )
 
