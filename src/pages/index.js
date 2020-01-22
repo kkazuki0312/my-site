@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react"
 import Helmet from 'react-helmet'
 import { Link } from "gatsby"
+import logo from '../images/logo.png'
+import icon from '../images/icon.ico'
+
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -14,6 +17,11 @@ const IndexPage = () => {
       setTitle((t) => t.substr(1) + t[0])
     }, 400);
   }, [])
+  
+function test(){
+  alert('aaaa')
+}
+
 
   // <Layout>
   //   <SEO title="Home" />
@@ -29,6 +37,7 @@ const IndexPage = () => {
     <div align="center">
       <Helmet>
         <title>{title}</title>
+        <link rel="icon" href={icon}></link>
       </Helmet>
       <div>
         <div className="marquee">
@@ -48,12 +57,17 @@ const IndexPage = () => {
         </table>
       </div>
       <h1 className="darkmagenta">【きょうのメッセージ】</h1>
-      <h2 className="red">もっと熱くなれよ！熱い血燃やしてけよ！！<br/>人間熱くなったときがホントの自分に出会えるんだ！！！！！！！！</h2>
+      <h2 className="red">世界には2つの都市しか存在しない。<br/>松戸か、松戸以外か</h2>
       <div className="marquee">
         <p>★★★★★相互リンク募集中★★★★★</p>
+      </div>
+      <div className="return">
+      <img src={logo} alt="Logo" />
       </div>
     </div>
   )
 }
 
 export default IndexPage
+
+
