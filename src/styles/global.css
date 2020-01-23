@@ -65,9 +65,10 @@ html {
     white-space: nowrap;
     animation-name: marquee;
     animation-timing-function: linear;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    max-width: 50%;
 }
 
 @keyframes return {

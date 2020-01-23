@@ -18,9 +18,9 @@ const IndexPage = () => {
     }, 400);
   }, [])
   
-function test(){
-  alert('aaaa')
-}
+  function logoClick(e) {
+    alert('ウホッ！！！！')
+  }
 
 
   // <Layout>
@@ -61,8 +61,9 @@ function test(){
       <div className="marquee">
         <p>★★★★★相互リンク募集中★★★★★</p>
       </div>
+      <h3>↓↓↓↓↓ゴリラをクリックしてみてね↓↓↓↓↓</h3>
       <div className="return">
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="Logo" onClick={logoClick}/>
       </div>
     </div>
   )
