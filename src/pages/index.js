@@ -57,7 +57,7 @@ function test(){
         </table>
       </div>
       <h1 className="darkmagenta">【きょうのメッセージ】</h1>
-      <h2 className="red">世界には2つの都市しか存在しない。<br/>松戸か、松戸以外か</h2>
+      <h2 className="red">今日は金曜日です！！！！<br/>仕事を早めに切り上げて帰りましょう！！！</h2>
       <div className="marquee">
         <p>★★★★★相互リンク募集中★★★★★</p>
       </div>
