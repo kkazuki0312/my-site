@@ -57,7 +57,7 @@ const IndexPage = () => {
         </table>
       </div>
       <h1 className="darkmagenta">【きょうのメッセージ】</h1>
-      <h2 className="red">今日は金曜日です！！！！<br/>仕事を早めに切り上げて帰りましょう！！！</h2>
+      <h2 className="red">俺の辞書に限界と不可能という言葉はない！！！！</h2>
       <div className="marquee">
         <p>★★★★★相互リンク募集中★★★★★</p>
       </div>
