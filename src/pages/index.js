@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from "react"
-import Helmet from 'react-helmet'
+import Helmet from "react-helmet"
 import { Link } from "gatsby"
-import logo from '../images/logo.png'
-import icon from '../images/icon.ico'
-
+import logo from "../images/logo.png"
+import icon from "../images/icon.ico"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import { initKirakira } from "../utils/kirakira"
+
 const IndexPage = () => {
-  const [title, setTitle] = useState('☆☆☆☆☆柏原のサイトへようこそ☆☆☆☆☆')
+  const [title, setTitle] = useState("☆☆☆☆☆柏原のサイトへようこそ☆☆☆☆☆")
 
   useEffect(() => {
     setInterval(() => {
-      setTitle((t) => t.substr(1) + t[0])
-    }, 400);
+      setTitle(t => t.substr(1) + t[0])
+    }, 400)
+    initKirakira()
   }, [])
-  
-  function logoClick(e) {
-    alert('ウホッ！！！！')
-  }
 
+  function logoClick(e) {
+    alert("ウホッ！！！！")
+  }
 
   // <Layout>
   //   <SEO title="Home" />
@@ -47,7 +48,15 @@ const IndexPage = () => {
           <tbody>
             <tr>
               <td className="center">
-                <p className="pink forestgreen">あなたは <img src="http://www.rays-counter.com/d451_f6_022/5e2413911e8f4/" alt="アクセスカウンター" border="0" /> 人目の訪問者です！！！</p>
+                <p className="pink forestgreen">
+                  あなたは{" "}
+                  <img
+                    src="http://www.rays-counter.com/d451_f6_022/5e2413911e8f4/"
+                    alt="アクセスカウンター"
+                    border="0"
+                  />{" "}
+                  人目の訪問者です！！！
+                </p>
                 <div className="return">
                   <p>ゆっくりしていってね</p>
                 </div>
@@ -57,18 +66,20 @@ const IndexPage = () => {
         </table>
       </div>
       <h1 className="darkmagenta">【きょうのメッセージ】</h1>
-      <h2 className="red">今日は金曜日です！！！！<br/>仕事を早めに切り上げて帰りましょう！！！</h2>
+      <h2 className="red">
+        今日は金曜日です！！！！
+        <br />
+        仕事を早めに切り上げて帰りましょう！！！
+      </h2>
       <div className="marquee">
         <p>★★★★★相互リンク募集中★★★★★</p>
       </div>
       <h3>↓↓↓↓↓ゴリラをクリックしてみてね↓↓↓↓↓</h3>
       <div className="return">
-      <img src={logo} alt="Logo" onClick={logoClick}/>
+        <img src={logo} alt="Logo" onClick={logoClick} />
       </div>
     </div>
   )
 }
 
 export default IndexPage
-
-
