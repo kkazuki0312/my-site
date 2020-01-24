@@ -16,6 +16,7 @@ const IndexPage = () => {
     setInterval(() => {
       setTitle((t) => t.substr(1) + t[0])
     }, 400);
+    initKirakira()
   }, [])
   
   function logoClick(e) {
