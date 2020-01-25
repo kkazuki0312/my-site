@@ -6,9 +6,21 @@ html {
     text-align: center;
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
+
 .pink {
     background-color: pink;
     color: green;
+}
+
+.question {
+    background-color: aqua;
+}
+
+.answer {
+    background-color: lemonchiffon;
 }
 
 .darkmagenta {
@@ -24,14 +36,17 @@ html {
     color: brown;
 }
 
+.counter {
+    vertical-align: text-bottom;
+}
+
 .marquee p {
     margin-top: 30px;
-    padding-left: 724px;
     display: inline-block;
     white-space: nowrap;
     animation-name: marquee;
     animation-timing-function: linear;
-    animation-duration: 10s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     font-size: 28px;
     color: blue;
@@ -48,27 +63,34 @@ html {
 
 .return p {
     margin: 0;
-    padding-left: 724px;
     display: inline-block;
     white-space: nowrap;
     animation-name: marquee;
     animation-timing-function: linear;
-    animation-duration: 3s;
+    animation-duration: 0.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-.return img {
-    margin: 0;
-    padding-left: 724px;
-    display: inline-block;
+.gorilla_area{
+    width: 800px;
+    height: 120px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gorilla_marquee {
+    padding-left: 800px;
     white-space: nowrap;
     animation-name: marquee;
+    animation-duration: 5s;
     animation-timing-function: linear;
-    animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    max-width: 50%;
+}
+
+.gorilla_marquee img{
+    max-width: 100px;
+    margin-bottom: 0em;
 }
 
 @keyframes return {
@@ -78,4 +100,48 @@ html {
     99%, to {
         transform: translate(-100%);
     }
+}
+
+.wrap {
+    display: flex;
+    min-height: 100vh;
+}
+
+.leftNavigation{
+    font-style: italic;
+    width: 200px;
+    text-align: center;
+    background-color: grey;
+    color: #fff;
+}
+
+.profile {
+    margin-top: 50px;
+    background-color: orange;
+}
+
+.bss {
+    margin-top: 50px;
+    background-color: gold;
+}
+
+.compatible {
+    margin-top: 50px;
+    background-color: violet;
+}
+
+.quiz {
+    margin-top: 50px;
+    background-color: sandybrown;
+}
+
+.link {
+    margin-top: 50px;
+    background-color: palegoldenrod;
+}
+
+.content{
+    flex: 1;
+    text-align: center;
+    margin-left: 10px;
 }

@@ -35,7 +35,25 @@ const IndexPage = () => {
   //   <Link to="/page-2/">Go to page 2</Link>
   // </Layout>
   return (
-    <div align="center">
+    <div className="wrap">
+      <header className="leftNavigation">
+        <div　className="profile">
+          <Link to="/profile/">プロフィール</Link>
+        </div>
+        <div　className="bss">
+          <Link to="/bss/">掲示板</Link>
+        </div>
+        <div　className="compatible">
+          <Link to="/compatible/">僕との相性チェック</Link>
+        </div>
+        <div　className="quiz">
+          <Link to="/quiz/">クイズ</Link>
+        </div>
+        <div　className="link">
+        <Link to="/link/">リンク</Link>
+        </div>
+      </header>
+    <div className="content">
       <Helmet>
         <title>{title}</title>
         <link rel="icon" href={icon}></link>
@@ -50,10 +68,9 @@ const IndexPage = () => {
               <td className="center">
                 <p className="pink forestgreen">
                   あなたは{" "}
-                  <img
+                  <img className="center"
                     src="http://www.rays-counter.com/d451_f6_022/5e2413911e8f4/"
                     alt="アクセスカウンター"
-                    border="0"
                   />{" "}
                   人目の訪問者です！！！
                 </p>
@@ -71,9 +88,12 @@ const IndexPage = () => {
         <p>★★★★★相互リンク募集中★★★★★</p>
       </div>
       <h3>↓↓↓↓↓ゴリラをクリックしてみてね↓↓↓↓↓</h3>
-      <div className="return">
-        <img src={logo} alt="Logo" onClick={logoClick} />
-      </div>
+      <div className="gorilla_area">
+        <div className="gorilla_marquee">
+          <img src={logo} alt="Logo" onClick={logoClick} />
+        </div>
+      </div> 
+    </div>
     </div>
   )
 }
