@@ -83,7 +83,7 @@ const IndexPage = () => {
         </table>
       </div>
       <h1 className="darkmagenta">【きょうのメッセージ】</h1>
-      <h2 className="red">俺の辞書に限界と不可能という言葉はない！！！！</h2>
+      <h2 className="red">サイドメニュー追加したから見てね</h2>
       <div className="marquee">
         <p>★★★★★相互リンク募集中★★★★★</p>
       </div>
