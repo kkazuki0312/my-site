@@ -21,7 +21,10 @@ const IndexPage = () => {
   }, [])
 
   function logoClick(e) {
-    alert("ウホッ！！！！")
+    const div = document.getElementById("gorilla");
+    const img = document.getElementById("logo");
+    const clone = img.cloneNode(true);
+		div.appendChild(clone);
   }
 
   // <Layout>
@@ -83,16 +86,17 @@ const IndexPage = () => {
         </table>
       </div>
       <h1 className="darkmagenta">【きょうのメッセージ】</h1>
-      <h2 className="red">サイドメニュー追加したから見てね</h2>
+      <h2 className="red">生まれた時から目の見えない人に<br/>
+        空の青さを伝える時何て言えばいいんだ？<br/>
+        こんな簡単なことさえ言葉にできない俺は芸人失格だよ<br/>
+        by 江頭2：50</h2>
       <div className="marquee">
         <p>★★★★★相互リンク募集中★★★★★</p>
       </div>
       <h3>↓↓↓↓↓ゴリラをクリックしてみてね↓↓↓↓↓</h3>
-      <div className="gorilla_area">
-        <div className="gorilla_marquee">
-          <img src={logo} alt="Logo" onClick={logoClick} />
-        </div>
-      </div> 
+      <div id="gorilla" className="gorilla gorilla1">
+        <img id="logo" src={logo} alt="Logo" onClick={logoClick} />
+      </div>
     </div>
     </div>
   )

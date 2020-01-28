@@ -72,7 +72,7 @@ html {
     animation-direction: alternate;
 }
 
-.gorilla_area{
+.gorilla_area {
     width: 800px;
     height: 120px;
     margin: auto;
@@ -88,7 +88,7 @@ html {
     animation-iteration-count: infinite;
 }
 
-.gorilla_marquee img{
+.gorilla_marquee img {
     max-width: 100px;
     margin-bottom: 0em;
 }
@@ -107,7 +107,7 @@ html {
     min-height: 100vh;
 }
 
-.leftNavigation{
+.leftNavigation {
     font-style: italic;
     width: 200px;
     min-width: 200px;
@@ -141,8 +141,29 @@ html {
     background-color: palegoldenrod;
 }
 
-.content{
+.content {
     flex: 1;
     text-align: center;
     margin-left: 10px;
+}
+
+.gorilla {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 3em;
+}
+
+.gorilla1 {
+    width: 130px;
+    height: 130px;
+    animation: r1 1s linear infinite;
+}
+
+@keyframes r1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
