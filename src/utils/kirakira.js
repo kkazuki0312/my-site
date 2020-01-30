@@ -1,9 +1,13 @@
 export const initKirakira = () => {
   //以下、このサイトからのコピペ: http://oekakirenn.webcrow.jp/mouse/mouse_moji1.html
 
-  //★星の色指定。増減可能。色名を順番に"●",と区切って、いくつでも並べる。最後の ] の前には ,(カンマ) 無し。１色指定も可
-  var colour = ["#f00", "#fcc", "#f0f"]
-  var sparkles = 50 //★原本50。キラキラ星の数
+  //★星の色指定
+  var colors = [
+    ["#f00", "#fcc", "#f0f", "#0aa", "#0f3", "#666", "#fff"], //カラフル
+    ["#ff0"], //ゴールド
+    ["#fff"], //雪
+  ]
+  var sparkles = 60 //★原本50。キラキラ星の数
 
   //指定ここまで-----------------★内容物が無くてもHTML5動作可能へ。複数色指定へ　2016/04/23-----------*/
   /****************************
@@ -13,10 +17,10 @@ export const initKirakira = () => {
    * DON'T EDIT BELOW THIS BOX *
    ****************************/
   var cNum = 0 //■追加。色数のカウント
-  var x = 400
-  var ox = 400
-  var y = 300
-  var oy = 300
+  var x = 300,
+    ox = 300
+  var y = 400,
+    oy = 400
   var swide = window.innerWidth,
     shigh = window.innerHeight
   var sleft = (sdown = 0)
@@ -29,8 +33,9 @@ export const initKirakira = () => {
     tinyx = [],
     tinyy = [],
     tinyv = []
-  console.log("onload")
   var i, rats, rlef, rdow
+  let randomColor = colors[Math.floor(Math.random() * colors.length)]
+
   for (var i = 0; i < sparkles; i++) {
     var rats = createDiv(3, 3)
     rats.style.visibility = "hidden"
@@ -63,7 +68,8 @@ export const initKirakira = () => {
           star[c].style.clip = "rect(0px, 5px, 5px, 0px)"
           star[c].childNodes[0].style.backgroundColor = star[
             c
-          ].childNodes[1].style.backgroundColor = colour[cNum % colour.length]
+          ].childNodes[1].style.backgroundColor =
+            randomColor[cNum % randomColor.length]
           cNum++ //■修正
           star[c].style.visibility = "visible"
           starv[c] = 50
