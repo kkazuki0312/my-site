@@ -88,9 +88,9 @@ const IndexPage = () => {
         </div>
         <h1 className="darkmagenta">【きょうのメッセージ】</h1>
         <h2 className="red">
-        予想外の人生になっても、
+        君が次に叩く1回で、
         <br/>
-        そのとき、幸せだったらいいんじゃないかな。
+        壁は打ち破れるかもしれないんだ！
         <br/>
         by 松岡修造
         </h2>
